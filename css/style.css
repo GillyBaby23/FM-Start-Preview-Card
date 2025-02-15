@@ -36,23 +36,22 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin-bottom: 2rem;
-  max-width: 144rem;
+  max-width: 120rem;
   background-color: var(--secondary-bg-color);
-  min-height: 60rem;
-  border-radius: 10px;
+  border-radius: 15px;
   overflow: hidden;
 }
 
 .card__text {
-  max-width: 90%;
-  padding: 8.4rem 7.2rem 7.2rem;
+  max-width: 91%;
+  padding: 8rem 6.8rem 6.8rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .card__text__title h1 {
-  font-size: 4.8rem;
+  font-size: 4rem;
   margin-bottom: 3.6rem;
   letter-spacing: 0.5px;
 }
@@ -62,7 +61,7 @@ body {
 }
 
 .card__text__title p {
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: var(--white-dark-transparent);
   line-height: 1.6;
 }
@@ -74,12 +73,12 @@ body {
 }
 
 .card__text__stats__item span {
-  font-size: 3.6rem;
+  font-size: 2.8rem;
   font-weight: 700;
 }
 
 .card__text__stats__item p {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-family: "Lexend Deca", sans-serif;
   text-transform: uppercase;
   color: var(--white-light-transparent);
@@ -104,18 +103,11 @@ body {
   background-color: hsla(277, 83%, 40%, 50%);
 }
 
-@media (max-width: 1200px) {
-  .card__text {
-    max-width: 95%;
-    padding: 7.2rem 6rem 6rem;
-  }
-
-  .card__text__stats {
-    max-width: 95%;
-  }
-}
-
 @media (max-width: 1024px) {
+  .container {
+    min-height: auto;
+  }
+
   .card__text {
     max-width: 100%;
     padding: 6rem 4.8rem 4.8rem;
@@ -130,6 +122,7 @@ body {
   html {
     font-size: 56.25%;
   }
+
   .card__text {
     padding: 4.8rem 3.6rem 3.6rem;
   }
@@ -153,6 +146,7 @@ body {
 
   .card__image {
     order: 1;
+    min-height: 40vh;
   }
 
   .card__text {
